@@ -11,7 +11,7 @@ import pickle
 
 from DatabaseConnections.PostgresConnection import postgres_cursor
 from DatabaseConnections.VerticaConnection import vertica_cursor
-from GetAdjustedPrices import SORTED_COLLECTION_PRICES
+SORTED_COLLECTION_PRICES = "prices_location_group_instrument_time"
 
 cluster = Cluster(
     ['s-msk-p-fxa-cs1', 's-msk-p-fxa-cs2', 's-msk-p-fxa-cs3', 's-msk-p-fxa-cs4'],
