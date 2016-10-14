@@ -89,7 +89,7 @@ class VerticaCassandraPricePush:
         # self.PricingGroups = np.concatenate((self.PricingGroupsMICEX, self.PricingGroupsCLIENT), axis=0)
         for i in range(len(df_info)):
             if 'MOEX' in df_info['name'][i]:
-                df_info['name'][i] = 'MOEX'
+                df_info.loc[i, 'name'] = 'MOEX'
         self.dict_pricing_group_size = dict(zip(df_info['id'], df_info['lot_mio']))
         self.dict_pricing_group_name = dict(zip(df_info['id'], df_info['name']))
         for i in self.dict_pricing_group_name.keys():
