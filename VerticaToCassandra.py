@@ -105,7 +105,7 @@ class VerticaCassandraPricePush:
         # DO not forget to delete limit statement here !!!
         query = "SELECT time, " + side + ", Instrument FROM " + \
                 SORTED_COLLECTION_PRICES + " where " \
-                                           " Location=:loc and PricingGroup=:PricingGroup and Instrument =:instr >= '2016-7-1'"
+                                           " Location=:loc and PricingGroup=:PricingGroup and Instrument =:instr and time >= '2016-7-1'"
         vertica_cursor.execute(query, params)
         return vertica_cursor
 

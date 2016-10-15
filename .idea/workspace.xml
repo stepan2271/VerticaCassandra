@@ -4,8 +4,6 @@
     <list default="true" id="f96a5aa9-5496-48ce-8460-d0dba2c71d5a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VerticaToCassandra.py" afterPath="$PROJECT_DIR$/VerticaToCassandra.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/VerticaPushDistributionsAndNOO.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/VerticaPushDistributionsAndNOO.py" />
     </list>
     <ignored path="VerticaCassandra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="VerticaToCassandra.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="190" column="25" selection-start-line="190" selection-start-column="25" selection-end-line="190" selection-end-column="25" />
+            <state relative-caret-position="545">
+              <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -310,7 +308,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/scripts/skewing" />
   </component>
@@ -591,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476453214333</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="works2">
+      <created>1476540641046</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1476540641046</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -631,7 +636,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ihhini" />
     <MESSAGE value="works" />
-    <option name="LAST_COMMIT_MESSAGE" value="works" />
+    <MESSAGE value="works2" />
+    <option name="LAST_COMMIT_MESSAGE" value="works2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="190" column="25" selection-start-line="190" selection-start-column="25" selection-end-line="190" selection-end-column="25" />
+        <state relative-caret-position="545">
+          <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
