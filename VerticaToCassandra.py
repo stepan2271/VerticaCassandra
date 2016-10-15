@@ -11,7 +11,9 @@ import pickle
 
 from DatabaseConnections.PostgresConnection import postgres_cursor
 from DatabaseConnections.VerticaConnection import vertica_cursor
+
 SORTED_COLLECTION_PRICES = "prices_location_group_instrument_time"
+local_engine = create_engine('postgresql://dbadmin:dbadmin@192.168.16.84:5432/fxet')
 
 cluster = Cluster(
     ['s-msk-p-fxa-cs1', 's-msk-p-fxa-cs2', 's-msk-p-fxa-cs3', 's-msk-p-fxa-cs4'],
@@ -66,9 +68,10 @@ class VerticaCassandraPricePush:
     #     return pd.DataFrame(vertica_cursor.fetchall(), columns=['instrument', 'pricing_group'])
 
     def get_all_instruments_for_all_groups(self):
-        query = "SELECT * FROM instruments_groups"
+        query = "SELECT DISTINCT * FROM instruments_groups"
         postgres_cursor.execute(query)
-        return pd.DataFrame(postgres_cursor.fetchall(), columns=['instrument', 'pricing_group'])
+        frame = pd.DataFrame(postgres_cursor.fetchall(), columns=['instrument', 'pricing_group'])
+        return frame.loc[:len(frame) / 2, ]
 
     def get_instruments(self, pricing_group):
         return np.array(
@@ -80,7 +83,7 @@ class VerticaCassandraPricePush:
         self.df_pricing_group_instruments = self.get_all_instruments_for_all_groups()
         # with open('data.pickle', 'wb') as f:
         #     pickle.dump(self.df_pricing_group_instruments, f)
-        # info = np.array(df_info['name'])
+        info = np.array(df_info['name'])
         # market_indices = np.where(is_moex)
         # client_indices = np.delete(np.arange(len(df_info)), market_indices)
         # self.PricingGroupsMICEX = np.array(df_info['id'])[market_indices]
@@ -102,7 +105,7 @@ class VerticaCassandraPricePush:
         # DO not forget to delete limit statement here !!!
         query = "SELECT time, " + side + ", Instrument FROM " + \
                 SORTED_COLLECTION_PRICES + " where " \
-                                           " Location=:loc and PricingGroup=:PricingGroup and Instrument =:instr limit 100000"
+                                           " Location=:loc and PricingGroup=:PricingGroup and Instrument =:instr >= '2016-7-1'"
         vertica_cursor.execute(query, params)
         return vertica_cursor
 
@@ -167,7 +170,7 @@ def do(session, side, location, instrument, pricing_group, dict_pricing_group_na
 
 
 def worker_job(queue, i, dict_pricing_group_name, dict_pricing_group_size):
-    # print("Thread # " + str(i) + " start working")
+    print("Thread # " + str(i) + " start working")
     # while True:
     #     try:
     #         job = queue.get()
@@ -180,14 +183,15 @@ def worker_job(queue, i, dict_pricing_group_name, dict_pricing_group_size):
         if job is None:
             break
         do(session, job[0], job[1], job[2], job[3], dict_pricing_group_name, dict_pricing_group_size)
-        # print("Thread # " + str(i) + " have finished pushing " + str(job[0]) + ", " + str(job[1]) + ", " + str(job[2]) + ", " + str(job[3]))
+        print("Thread # " + str(i) + " have finished pushing " + str(job[0]) + ", " + str(job[1]) + ", " + str(job[2]) + ", " + str(job[3]))
+        df = pd.DataFrame([job], columns=['side', 'location', 'instrument', 'pricing_group'])
+        df.to_sql('pushed', local_engine, if_exists='append', index=False)
         queue.task_done()
     queue.task_done()
-    # print ("Thread # " + str(i) + " finished work")
+    print ("Thread # " + str(i) + " finished work")
 
 
 if __name__ == '__main__':
-
     def run(nCPU):
         pusher = VerticaCassandraPricePush(nCPU)
         workers = []
