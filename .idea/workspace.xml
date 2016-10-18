@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96a5aa9-5496-48ce-8460-d0dba2c71d5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDistributionDAO.py" />
-      <change type="DELETED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDataDAO.py" afterPath="" />
-      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetDistribution.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/VerticaGetDistribution.py" />
-      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonal.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonalDistribution.py" />
-      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroups.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/VerticaGetAdjustedPricesGroupsDAO.py" />
-      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDeltasGroups.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushPriceDeltasDAO/PushDeltasGroupsDAO.py" />
-      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/GetAdjustedPricesUnmargined.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/GetAdjustedPricesDAO/VerticaGetAdjustedPricesUnmarginedDAO.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseConnections/Connections.py" afterPath="$PROJECT_DIR$/DatabaseConnections/Connections.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseConnections/PostgresConnection.py" afterPath="$PROJECT_DIR$/DatabaseConnections/PostgresConnection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseConnections/VerticaConnection.py" afterPath="$PROJECT_DIR$/DatabaseConnections/VerticaConnection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VerticaToCassandra.py" afterPath="$PROJECT_DIR$/VerticaToCassandra.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetGroup.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetGroup.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDealsPersonal.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDealsPersonal.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/MarginTrade/MarginTrade.py" afterPath="$USER_HOME$/scripts/skewing/MarginTrade/MarginTrade.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/SizeInfo.py" afterPath="$USER_HOME$/scripts/skewing/SizeInfo.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py" afterPath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/PostgresConnection.py" afterPath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/PostgresConnection.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/VerticaConnection.py" afterPath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/VerticaConnection.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/VerticaToCassandra.py" afterPath="$USER_HOME$/scripts/skewing/VerticaToCassandra.py" />
     </list>
     <ignored path="VerticaCassandra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,21 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerticaToCassandra.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VerticaToCassandra.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+            <state relative-caret-position="2580">
+              <caret line="139" column="24" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CassandraPushDeltaDistributionPersonalDAO.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CassandraPushDeltaDistributionPersonalDAO.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/CassandraPushDeltaDistributionPersonalDAO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="28" column="55" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="276">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -163,7 +141,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/scripts/skewing" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -870,7 +848,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476540732663</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="works from 2016-7-1">
+      <created>1476788640963</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1476788640963</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1377,14 +1362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1403,11 +1380,19 @@
     </entry>
     <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/CassandraPushDeltaDistributionPersonalDAO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="55" />
+        <state relative-caret-position="276">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2580">
+          <caret line="139" column="24" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
