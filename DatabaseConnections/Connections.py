@@ -10,7 +10,7 @@ class ConnectionManagement(object):
     def get_cursor_and_connection(self):
         raise Exception
 
-    def get_query_insert_table_data(self, table_name, time_column_name):
+    def get_query_delete_table_data(self, table_name, time_column_name):
         raise Exception
 
     def get_query_delete_excluded_dates(self, table_name, time_column_name):
@@ -26,7 +26,7 @@ class ConnectionManagement(object):
         params = {
             'start_time': start_time,
             'end_time': end_time,}
-        query = self.get_query_insert_table_data(table_name, time_column_name)
+        query = self.get_query_delete_table_data(table_name, time_column_name)
         self.cursor.execute(query, params)
         self.cursor.fetchall()
         self.push_table(data, table_name)

@@ -20,7 +20,7 @@ class VerticaConnectionManagement(ConnectionManagement):
         vertica_cursor = connection.cursor()
         return vertica_cursor, connection
 
-    def get_query_insert_table_data(self, table_name, time_column_name):
+    def get_query_delete_table_data(self, table_name, time_column_name):
         return "DELETE FROM " + table_name + " where " + time_column_name + ">=:start_time and " + time_column_name + " <= :end_time;"
 
     def get_query_delete_same_estimate(self, table_name):

@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96a5aa9-5496-48ce-8460-d0dba2c71d5a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDistributionDAO.py" />
+      <change type="DELETED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDataDAO.py" afterPath="" />
+      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetDistribution.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/VerticaGetDistribution.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonal.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonalDistribution.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroups.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/VerticaGetAdjustedPricesGroupsDAO.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDeltasGroups.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushPriceDeltasDAO/PushDeltasGroupsDAO.py" />
+      <change type="MOVED" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/GetAdjustedPricesUnmargined.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/GetAdjustedPricesDAO/VerticaGetAdjustedPricesUnmarginedDAO.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseConnections/Connections.py" afterPath="$PROJECT_DIR$/DatabaseConnections/Connections.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseConnections/PostgresConnection.py" afterPath="$PROJECT_DIR$/DatabaseConnections/PostgresConnection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseConnections/VerticaConnection.py" afterPath="$PROJECT_DIR$/DatabaseConnections/VerticaConnection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VerticaToCassandra.py" afterPath="$PROJECT_DIR$/VerticaToCassandra.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetGroup.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetGroup.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDealsPersonal.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDealsPersonal.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py" afterPath="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/MarginTrade/MarginTrade.py" afterPath="$USER_HOME$/scripts/skewing/MarginTrade/MarginTrade.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/SizeInfo.py" afterPath="$USER_HOME$/scripts/skewing/SizeInfo.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py" afterPath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/PostgresConnection.py" afterPath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/PostgresConnection.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/VerticaConnection.py" afterPath="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/VerticaConnection.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/scripts/skewing/VerticaToCassandra.py" afterPath="$USER_HOME$/scripts/skewing/VerticaToCassandra.py" />
     </list>
     <ignored path="VerticaCassandra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,105 +45,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VerticaToCassandra.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PushDeltaDistribution.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerticaToCassandra.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+            <state relative-caret-position="407">
+              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CassandraPushDeltaDistributionPersonalDAO.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/CassandraPushDeltaDistributionPersonalDAO.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="28" column="55" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="55" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/sqlalchemy/engine/default.py">
+      <file leaf-file-name="VerticaGetAllDistributionsDAO.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/VerticaGetAllDistributionsDAO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="449" column="0" selection-start-line="449" selection-start-column="0" selection-end-line="449" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/core/frame.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/indexes/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="1877" column="0" selection-start-line="1877" selection-start-column="0" selection-end-line="1877" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="internals.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/core/internals.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="3224" column="0" selection-start-line="3224" selection-start-column="0" selection-end-line="3224" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PushData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="859">
-              <caret line="103" column="18" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupPusher.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="69">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="17" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllGroupsPusher.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/AllGroupsPusher.py">
+      <file leaf-file-name="CassandraGetAllDistributionsDAO.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/CassandraGetAllDistributionsDAO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="385">
+              <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CassandraGetAdjustedPricesDAO.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/CassandraGetAdjustedPricesDAO.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HourDivision.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/HourDivision.py">
+      <file leaf-file-name="CassandraPushDataDAO.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/CassandraPushDataDAO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connections.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py">
+      <file leaf-file-name="PushDate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushDate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="449">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetPersonalDistribution.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonalDistribution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -130,8 +155,15 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/scripts/skewing" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -143,7 +175,52 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/VerticaPushDistributionsAndNOO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDataDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDistrinutionDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushPriceDeltasDAO/PushDeltasGroups.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushPriceDeltasDAO/PushDeltasGroupsDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushPriceDeltasDAO/PushPriceDeltasDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDataGroups.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/HourDivision.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushPriceDeltasDAO/CassandraPushDeltaGroupsDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetClientSettings.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/VerticaGetAdjustedPrices.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/GetAdjustedPrices.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroups.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDistributionDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/VerticaGetAdjustedPricesDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/GetAdjustedPricesDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/GetAdjustedPricesGroupsDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/CassandraGetAdjustedPricesGroups.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/VerticaGetAdjustedPricesGroupsDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Groups/Group.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/CassandraGetAdjustedPricesGroupsDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/VerticaToCassandra.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/GetAdjustedPricesUnmargined.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/VerticaGetAdjustedPricesUnmargined.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/VerticaGetAdjustedPricesUnmarginedDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/PushDataPersonalDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/PostgresPushData.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/VerticaPushData.py" />
         <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/PostgresPushDeltaDistributionPersonalDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDealsPersonal.py" />
+        <option value="$USER_HOME$/scripts/skewing/run.py" />
+        <option value="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/PostgresConnection.py" />
+        <option value="$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonal.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushDate.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonalDistribution.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/VerticaGetDistribution.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/VerticaGetAllDistributions.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/VerticaPushDeltaDistributionPersonalDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py" />
+        <option value="$USER_HOME$/scripts/skewing/SizeInfo.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/CassandraPushDeltaDistributionPersonalDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/VerticaGetAllDistributionsDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/CassandraGetAdjustedPricesDAO.py" />
+        <option value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/CassandraGetAllDistributionsDAO.py" />
         <option value="$PROJECT_DIR$/VerticaToCassandra.py" />
       </list>
     </option>
@@ -209,7 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OptimalSkew" />
+              <option name="myItemId" value="Utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,7 +366,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PushGroups" />
+              <option name="myItemId" value="PushPersonalApproach" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,7 +376,171 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="skewing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataPreparation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Push" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PushPersonalApproach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PushDeltaDistributionPersonalDAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="VerticaCassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skewing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataPreparation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Push" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PushPersonalApproach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PushDataPersonalDAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VerticaCassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skewing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataPreparation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Groups" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VerticaCassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skewing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataPreparation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Get" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VerticaCassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skewing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataPreparation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Get" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GetGroup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VerticaCassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skewing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataPreparation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Get" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GetGroup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GetAllDistributions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VerticaCassandra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skewing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClientEstimation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,7 +560,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ruagrs7\scripts\skewing\DataManager\DataPreparation\Push\PushPersonalApproach" />
       <recent name="C:\Users\ruagrs7\scripts\skewing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ruagrs7\scripts\skewing\DataManager\DataPreparation\Push\PushPersonalApproach\GetAdjustedPricesDAO" />
+      <recent name="C:\Users\ruagrs7\scripts\skewing\DataManager\DataPreparation\Push\PushGroups\GetAdjustedPricesGroups" />
+      <recent name="C:\Users\ruagrs7\scripts\skewing\DataManager\DataPreparation\Push\IPush\GetAdjustedPrices" />
+      <recent name="C:\Users\ruagrs7\scripts\skewing\DataManager\DataPreparation\Push\PushGroups\PushPriceDeltasDAO" />
     </key>
   </component>
   <component name="RunManager" selected="Python.VerticaToCassandra">
@@ -387,6 +635,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="VerticaCassandra" />
       <option name="SCRIPT_NAME" value="$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushDate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/scripts/skewing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="VerticaCassandra" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/scripts/skewing/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -525,18 +790,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.VerticaToCassandra" />
       <item index="1" class="java.lang.String" itemvalue="Python.VerticaToCassandra (1)" />
       <item index="2" class="java.lang.String" itemvalue="Python.PushData" />
       <item index="3" class="java.lang.String" itemvalue="Python.PushDate" />
+      <item index="4" class="java.lang.String" itemvalue="Python.run" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.VerticaToCassandra" />
         <item index="1" class="java.lang.String" itemvalue="Python.PushDate" />
-        <item index="2" class="java.lang.String" itemvalue="Python.PushData" />
+        <item index="2" class="java.lang.String" itemvalue="Python.run" />
         <item index="3" class="java.lang.String" itemvalue="Python.VerticaToCassandra (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.PushData" />
       </list>
     </recent_temporary>
   </component>
@@ -596,29 +863,36 @@
       <option name="project" value="LOCAL" />
       <updated>1476540641046</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="works from 2016-7-1">
+      <created>1476540732663</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1476540732663</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1916" y="-4" width="1928" height="1088" extended-state="6" />
-    <editor active="true" />
+    <frame x="1916" y="-4" width="1928" height="1088" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28172722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32817337" sideWeight="0.51237494" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32610938" sideWeight="0.56292784" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.47077408" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32817337" sideWeight="0.48762506" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32610938" sideWeight="0.43707216" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983488" sideWeight="0.8314903" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36532506" sideWeight="0.7266983" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -637,25 +911,86 @@
     <MESSAGE value="ihhini" />
     <MESSAGE value="works" />
     <MESSAGE value="works2" />
-    <option name="LAST_COMMIT_MESSAGE" value="works2" />
+    <MESSAGE value="works from 2016-7-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="works from 2016-7-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/HourDivision.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="4" />
+          <line>81</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/CassandraGetAdjustedPricesDAO.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/CassandraGetAdjustedPricesDAO.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/VerticaToCassandra.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDealsPersonal.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/VerticaGetDistribution.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/ClientEstimation/Group/ClientGroupManager.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/ClientEstimation/Client.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/ClientEstimation/Client.py</url>
+          <line>256</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/HourAggregation.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/VerticaPushDeltaDistributionPersonalDAO.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/CassandraPushDeltaDistributionPersonalDAO.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -665,359 +1000,413 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="df = pd.DataFrame([(0,1,1)])" language="Python" />
-        <watch expression="df" language="Python" />
+        <watch expression="len(data_times)" language="Python" />
+        <watch expression="self.collectinons_to_push_distribution[margin]" language="Python" />
+        <watch expression="margin" language="Python" />
+        <watch expression="collectinons_to_push_distribution[margin]" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/cassandra_driver-3.7.0-py2.7-win-amd64.egg/cassandra/query.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3800">
-          <caret line="190" column="26" selection-start-line="190" selection-start-column="26" selection-end-line="190" selection-end-column="26" />
+        <state relative-caret-position="195">
+          <caret line="533" column="0" selection-start-line="533" selection-start-column="0" selection-end-line="533" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Groups/Group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/multiprocessing/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-733">
+          <caret line="263" column="28" selection-start-line="262" selection-start-column="26" selection-end-line="263" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/GetAdjustedPricesDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/multiprocessing/__init__.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/VerticaToCassandra.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/cassandra_driver-3.7.0-py2.7-win-amd64.egg/cassandra/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19160">
-          <caret line="971" column="16" selection-start-line="971" selection-start-column="16" selection-end-line="971" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="565">
+          <caret line="193" column="46" selection-start-line="193" selection-start-column="46" selection-end-line="193" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/AllGroupsPusher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/HourDivision.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/VerticaPushDistributionsAndNOO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDataDAO/VerticaPushData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseConnections/VerticaConnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseConnections/PostgresConnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseConnections/Connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/VerticaToCassandra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/PushDistributionsAndNOO.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDataDAO/CassandraPushDataDAO.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/__init__.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDataDAO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/PostgresPushDistributionsAndNOO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDataGroups.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/CassandraGetAdjustedPricesGroupsDAO.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="1311" column="0" selection-start-line="1311" selection-start-column="0" selection-end-line="1311" selection-end-column="0" />
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/core/indexing.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/VerticaGetAdjustedPricesDAO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="1285" column="0" selection-start-line="1285" selection-start-column="0" selection-end-line="1285" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GetAdjustedPricesGroupsDAO/VerticaGetAdjustedPricesGroupsDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDataDAO/PostgresPushData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/_strptime.py">
+    <entry file="file://$PROJECT_DIR$/DatabaseConnections/VerticaConnection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushDate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/util/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/sqlalchemy/sql/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="753" column="0" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/cassandra_driver-3.7.0-py2.7-win-amd64.egg/cassandra/io/asyncorereactor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/asyncore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/cassandra_driver-3.7.0-py2.7-win-amd64.egg/cassandra/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19160">
-          <caret line="971" column="16" selection-start-line="971" selection-start-column="16" selection-end-line="971" selection-end-column="16" />
+        <state relative-caret-position="186">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/VerticaPushDistributionsAndNOO.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/PushDataPersonalDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/VerticaPushData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/PostgresPushDeltaDistributionPersonalDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDistributionsAndNOODAO/CassandraPushDistributionDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/GetAdjustedPricesDAO/VerticaGetAdjustedPricesUnmarginedDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#30#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushEachClientsMargin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-954">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetClientSettings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/PostgresConnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/VerticaConnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseConnections/Connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/ClientEstimation/Group/ClientGroupManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/multiprocessing/__init__.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/ClientEstimation/Client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/PushDataDAO/VerticaPushData.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetGroup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="139" selection-start-line="26" selection-start-column="139" selection-end-line="26" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/HourAggregation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/scripts/skewing/Utils/DatabaseConnections/Connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/HourDivision.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/GroupPusher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushGroups/AllGroupsPusher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="196">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/PushData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="103" column="18" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="18" />
+        <state relative-caret-position="235">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/core/internals.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/PostgresPushData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="3224" column="0" selection-start-line="3224" selection-start-column="0" selection-end-line="3224" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDealsPersonal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/PyQt_Fit-1.3.4-py2.7.egg/pyqt_fit/_kernels_py.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/indexes/base.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/HourData/DeltaDistributionEsimator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="1877" column="0" selection-start-line="1877" selection-start-column="0" selection-end-line="1877" selection-end-column="0" />
+        <state relative-caret-position="500">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/pandas/core/frame.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/VerticaGetAllDistributions.py" />
+    <entry file="file://$USER_HOME$/scripts/skewing/SizeInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/VerticaPushDeltaDistributionPersonalDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/sqlalchemy/engine/default.py">
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="449" column="0" selection-start-line="449" selection-start-column="0" selection-end-line="449" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/VerticaGetDistribution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetPersonalDistribution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDataPersonalDAO/CassandraPushDataDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/IPush/GetAdjustedPrices/CassandraGetAdjustedPricesDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/VerticaGetAllDistributionsDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Get/GetGroup/GetAllDistributions/CassandraGetAllDistributionsDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VerticaToCassandra.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+        <state relative-caret-position="407">
+          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistribution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushDate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/scripts/skewing/DataManager/DataPreparation/Push/PushPersonalApproach/PushDeltaDistributionPersonalDAO/CassandraPushDeltaDistributionPersonalDAO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="55" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>

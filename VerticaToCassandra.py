@@ -1,13 +1,11 @@
 import multiprocessing as mp
+from datetime import timedelta, date
 
 import numpy as np
 import pandas as pd
-from Queue import Empty
 from cassandra.auth import PlainTextAuthProvider
 from cassandra.cluster import Cluster
-from datetime import datetime
 from sqlalchemy import create_engine
-import pickle
 
 from DatabaseConnections.PostgresConnection import postgres_cursor
 from DatabaseConnections.VerticaConnection import vertica_cursor
@@ -44,11 +42,17 @@ def lowpriority():
 
 
 class VerticaCassandraPricePush:
-    def __init__(self, nCPU):
+    def __init__(self, nCPU, start_date, number_of_days):
         self.nCPU = nCPU
         self.local_engine = create_engine('postgresql://dbadmin:dbadmin@192.168.16.84:5432/fxet')
+        self.set_dates(start_date, number_of_days)
         self.initialize()
         pass
+
+    def set_dates(self, start_date, number_of_days):
+        self.dates = []
+        for i in range(number_of_days):
+            self.dates.append(start_date + timedelta(days=i))
 
     def initialize(self):
         self.set_price_streams_info()
@@ -71,7 +75,7 @@ class VerticaCassandraPricePush:
         query = "SELECT DISTINCT * FROM instruments_groups"
         postgres_cursor.execute(query)
         frame = pd.DataFrame(postgres_cursor.fetchall(), columns=['instrument', 'pricing_group'])
-        return frame.loc[:len(frame) / 2, ]
+        return frame
 
     def get_instruments(self, pricing_group):
         return np.array(
@@ -105,7 +109,7 @@ class VerticaCassandraPricePush:
         # DO not forget to delete limit statement here !!!
         query = "SELECT time, " + side + ", Instrument FROM " + \
                 SORTED_COLLECTION_PRICES + " where " \
-                                           " Location=:loc and PricingGroup=:PricingGroup and Instrument =:instr and time >= '2016-7-1'"
+                                           " Location=:loc and PricingGroup=:PricingGroup and Instrument =:instr and time>=:date and time<:end_date"
         vertica_cursor.execute(query, params)
         return vertica_cursor
 
@@ -130,7 +134,8 @@ class VerticaCassandraPricePush:
             for location in self.Locations:
                 for pricing_group in self.PricingGroups:
                     for instrument in self.get_instruments(pricing_group):
-                        self.jobs.append((side, location, instrument, pricing_group))
+                        for date in self.dates:
+                            self.jobs.append((side, location, instrument, pricing_group, date))
 
     def set_queue(self):
         self.queue = mp.JoinableQueue()
@@ -144,27 +149,50 @@ def transform_instrument(instrument):
     return "'" + instrument[:3] + '/' + instrument[3:] + "'"
 
 
-def do(session, side, location, instrument, pricing_group, dict_pricing_group_name=None, dict_pricing_group_size=None):
+def do(session, side, location, date_id, instrument, pricing_group, dict_pricing_group_name=None, dict_pricing_group_size=None):
     params = {
         'loc': location,
         'PricingGroup': str(pricing_group) + ":",
-        'instr': instrument}
+        'instr': instrument,
+        'date': date_id,
+        'end_date': date_id + timedelta(days=1)
+    }
     verticaCursor = VerticaCassandraPricePush.get_vertica_cursor(params, side)
     source = VerticaCassandraPricePush.get_source_by_pricing_group(dict_pricing_group_name, pricing_group)
     size = VerticaCassandraPricePush.get_size(dict_pricing_group_size, pricing_group)
     loc = "'" + location + "'"
+    date = "'" + str(date_id) + "'"
     transformed_instrument = transform_instrument(instrument)
     prepared_statement = session.prepare("INSERT INTO increments "
-                                         "(source, instrument,location, date_id,timestamp,is_bid,size,price) "
-                                         "VALUES (" + source + "," + transformed_instrument + "," + loc + ",?,?," + VerticaCassandraPricePush.is_bid(
-        side) + "," + str(
-        int(size * 10 ** 6)) + ",?)")
+                                         "(source, instrument,location,size, date_id,timestamp,is_bid,price) "
+                                         "VALUES (" + source + "," + transformed_instrument + "," + loc + "," + str(
+        int(size * 10 ** 6)) + "," + date + ",?," + VerticaCassandraPricePush.is_bid(side) + ",?)")
     # i = 0
     for vertica_row in verticaCursor.iterate():
-        cassandra_tuple = (str(vertica_row[0].date()),
-                           vertica_row[0], vertica_row[1])
+        cassandra_tuple = (vertica_row[0], vertica_row[1])
         session.execute_async(prepared_statement, cassandra_tuple)
-        # i += 1
+
+        # def do(session, side, location, instrument, pricing_group, dict_pricing_group_name=None, dict_pricing_group_size=None):
+        #     params = {
+        #         'loc': location,
+        #         'PricingGroup': str(pricing_group) + ":",
+        #         'instr': instrument}
+        #     verticaCursor = VerticaCassandraPricePush.get_vertica_cursor(params, side)
+        #     source = VerticaCassandraPricePush.get_source_by_pricing_group(dict_pricing_group_name, pricing_group)
+        #     size = VerticaCassandraPricePush.get_size(dict_pricing_group_size, pricing_group)
+        #     loc = "'" + location + "'"
+        #     transformed_instrument = transform_instrument(instrument)
+        #     prepared_statement = session.prepare("INSERT INTO increments "
+        #                                          "(source, instrument,location, date_id,timestamp,is_bid,size,price) "
+        #                                          "VALUES (" + source + "," + transformed_instrument + "," + loc + ",?,?," + VerticaCassandraPricePush.is_bid(
+        #         side) + "," + str(
+        #         int(size * 10 ** 6)) + ",?)")
+        #     # i = 0
+        #     for vertica_row in verticaCursor.iterate():
+        #         cassandra_tuple = (str(vertica_row[0].date()),
+        #                            vertica_row[0], vertica_row[1])
+        #         session.execute_async(prepared_statement, cassandra_tuple)
+        #         # i += 1
         # if i % 10000 == 0:
         #     print("Good job: " + str(datetime.now()))
 
@@ -182,24 +210,43 @@ def worker_job(queue, i, dict_pricing_group_name, dict_pricing_group_size):
         job = queue.get()
         if job is None:
             break
-        do(session, job[0], job[1], job[2], job[3], dict_pricing_group_name, dict_pricing_group_size)
-        print("Thread # " + str(i) + " have finished pushing " + str(job[0]) + ", " + str(job[1]) + ", " + str(job[2]) + ", " + str(job[3]))
-        df = pd.DataFrame([job], columns=['side', 'location', 'instrument', 'pricing_group'])
-        df.to_sql('pushed', local_engine, if_exists='append', index=False)
+        if not is_pushed(job):
+            do(session, job[0], job[1], job[4], job[2], job[3], dict_pricing_group_name, dict_pricing_group_size)
+            print("Thread # " + str(i) + " have finished pushing " + str(job[0]) + ", " + str(job[1]) + ", " + str(job[2]) + ", " + str(
+                job[3]) + ", " + str(job[4]))
+            df = pd.DataFrame([job], columns=['side', 'location', 'instrument', 'pricing_group', 'date_id'])
+            df.to_sql('pushed', local_engine, if_exists='append', index=False)
         queue.task_done()
     queue.task_done()
     print ("Thread # " + str(i) + " finished work")
 
 
+def is_pushed(job):
+    params = {
+        'side': job[0],
+        'location': job[1],
+        'instrument': job[2],
+        'pricing_group': int(job[3]),
+        'date_id': str(job[4])
+    }
+    query = "SELECT count(*) FROM pushed where side=%(side)s and location=%(location)s and instrument =%(instrument)s" + \
+            " and pricing_group = %(pricing_group)s and date_id =%(date_id)s"
+    postgres_cursor.execute(query, params)
+    df = pd.DataFrame(postgres_cursor.fetchall(), columns=['count'])
+    if df['count'][0] != 0:
+        return True
+    else:
+        return False
+
+
 if __name__ == '__main__':
     def run(nCPU):
-        pusher = VerticaCassandraPricePush(nCPU)
+        pusher = VerticaCassandraPricePush(nCPU, date(2016, 9, 1), 30)
         workers = []
         for i in range(nCPU):
             worker = mp.Process(target=worker_job, args=(pusher.queue, i, pusher.dict_pricing_group_name, pusher.dict_pricing_group_size))
             workers.append(worker)
             worker.start()
         pusher.queue.join()
-
 
     run(mp.cpu_count())
